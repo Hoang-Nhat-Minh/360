@@ -1,0 +1,52 @@
+.location-sign {
+    position: relative;
+    white-space: nowrap;
+    background-color: #00802b;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(13, 134, 129, 0.6);
+    display: inline-block;
+    border: 1.5px solid rgb(14, 165, 233);
+}
+
+.location-sign:hover {
+    cursor: pointer;
+}
+
+.location-sign>.stick {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: white;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.location-sign>.stick>.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(14, 165, 233);
+    border-radius: 50%;
+    animation: glow 0.5s infinite alternate;
+    left: -4px;
+    bottom: -6px;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+        transform: scale(1);
+    }
+
+    100% {
+        box-shadow: 0 0 15px white, 0 0 30px white, 0 0 45px white;
+        transform: scale(1.5);
+    }
+}

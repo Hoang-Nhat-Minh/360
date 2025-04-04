@@ -1,0 +1,80 @@
+/* Markers Style */
+.psv-marker--custom {
+  cursor: pointer;
+  user-select: none;
+}
+
+.psv-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.psv-content img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.psv-marker--custom:hover .img-container {
+  transform: scale(2);
+}
+
+.psv-marker--custom:hover .psv-content img {
+  animation: bubble 1.5s infinite 0.3s;
+}
+
+.psv-marker--custom .hotlink_name {
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: x-large;
+  white-space: nowrap;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.psv-marker--custom:hover .hotlink_name {
+  background-color: rgb(63, 63, 63);
+  transform: translateY(50px);
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1) scaleX(1) scaleY(1);
+  }
+
+  25% {
+    transform: scale(1.1) scaleY(1.1) scaleX(1);
+  }
+
+  50% {
+    transform: scale(1.1) scaleX(1.1) scaleY(1);
+  }
+
+  75% {
+    transform: scale(1.1) scaleY(1.1) scaleX(1);
+  }
+
+  100% {
+    transform: scale(1) scaleX(1) scaleY(1);
+  }
+}
+
+
+/* Main Style */
+.main-logo {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}

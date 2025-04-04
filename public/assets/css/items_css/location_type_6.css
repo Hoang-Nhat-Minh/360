@@ -1,0 +1,61 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.overlay-low {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    z-index: 10000;
+    text-align: center;
+}
+
+.overlay-low img {
+    max-width: 600px;
+    max-height: 300px;
+    border: 1px solid white;
+}
+
+
+.overlay iframe {
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+
+.hotspot_special_btn {
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    border: 1.8px solid white;
+}
+
+.hotspot_special_btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+.hotspot_special_btn i {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.hotspot_special_btn:hover i {
+    color: black;
+}
